@@ -22,7 +22,7 @@ const projects = [
   },
   {
     id: 3,
-    title: 'TicketCo Fly',
+    title: 'Samsung Galaxy Fit',
     description:
       'The Samsung Galaxy Fit application connects Samsung Galaxy Fit2, Gear Fit2, Gear Fit2 pro and Galaxy Fit, Galaxy Fitⓔ to your mobile device. It also manages and monitors Samsung Fit features and applications installed through Gear Appstore.',
     image: 'galaxyFit.jpg',
