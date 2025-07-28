@@ -1,26 +1,26 @@
-import { Briefcase, Code, User } from "lucide-react";
-import { Intro } from "./Intro";
-import { Actions } from "./Actions";
-import { InfoCard } from "./InfoCard";
+import { Briefcase, Code, Smartphone } from 'lucide-react';
+import { Intro } from './Intro';
+import { Actions } from './Actions';
+import { InfoCard } from './InfoCard';
 
 const infoCards = [
   {
     Icon: Code,
-    title: "Web Development",
+    title: 'Web Development',
     description:
-      "Creating responsive websites and web applications with modern frameworks.",
+      'Creating responsive websites and web applications with modern frameworks.',
   },
   {
-    Icon: User,
-    title: "UI/UX Design",
+    Icon: Smartphone,
+    title: 'iOS Mobile Development',
     description:
-      "Designing intuitive user interfaces and seamless user experiences.",
+      'Creating smooth, responsive apps tailored for Apple’s ecosystem and user expectations.',
   },
   {
     Icon: Briefcase,
-    title: "Project Management",
+    title: 'Project Management',
     description:
-      "Leading projects from conception to completion with agile methodologies.",
+      'Leading projects from conception to completion with agile methodologies.',
   },
 ];
 
