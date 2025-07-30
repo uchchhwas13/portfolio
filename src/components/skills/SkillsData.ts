@@ -1,4 +1,10 @@
-export const skills = [
+type Skill = {
+  name: string;
+  level: number;
+  category: string;
+};
+
+export const skills: Skill[] = [
   { name: 'HTML/CSS', level: 60, category: 'Frontend' },
   { name: 'JavaScript', level: 60, category: 'Frontend' },
   { name: 'React', level: 60, category: 'Frontend' },
