@@ -1,6 +1,12 @@
 import { cn } from '../../lib/utils';
 
-export const SkillFilter = ({ categories, active, onChange }) => (
+type SkillFilterProps = {
+  categories: string[];
+  active: string,
+  onChange: (value: string) => void
+}
+
+export const SkillFilter = ({ categories, active, onChange }: SkillFilterProps) => (
   <div className="flex flex-wrap justify-center gap-4 mb-12">
     {categories.map((category) => (
       <button
