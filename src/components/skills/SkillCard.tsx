@@ -1,4 +1,9 @@
-export const SkillCard = ({ name, level }) => (
+type SkillCardProps = {
+  name: string;
+  level: number
+}
+
+export const SkillCard = ({ name, level }: SkillCardProps) => (
   <div className="bg-card p-6 rounded-lg shadow-xs card-hover">
     <div className="text-left mb-4">
       <h3 className="font-semibold text-lg">{name}</h3>
