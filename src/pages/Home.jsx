@@ -5,7 +5,7 @@ import { HeroSection } from '../components/HeroSection';
 import { AboutSection } from '../components/About/AboutSection';
 import { SkillsSection } from '../components/skills/SkillsSection';
 import { ProjectSection } from '../components/ProjectSection';
-import { ContactSection } from '../components/ContactSection';
+import { ContactSection } from '../components/contact/ContactSection';
 
 export const Home = () => {
   return (
