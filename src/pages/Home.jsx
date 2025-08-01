@@ -4,7 +4,7 @@ import { Navbar } from '../components/Navbar';
 import { HeroSection } from '../components/hero/HeroSection';
 import { AboutSection } from '../components/About/AboutSection';
 import { SkillsSection } from '../components/skills/SkillsSection';
-import { ProjectSection } from '../components/ProjectSection';
+import { ProjectSection } from '../components/project/ProjectSection';
 import { ContactSection } from '../components/contact/ContactSection';
 
 export const Home = () => {
