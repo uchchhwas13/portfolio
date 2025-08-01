@@ -2,8 +2,15 @@ import { Briefcase, Code, Smartphone } from 'lucide-react';
 import { Intro } from './Intro';
 import { Actions } from './Actions';
 import { InfoCard } from './InfoCard';
+import { LucideIcon } from 'lucide-react';
 
-const infoCards = [
+type InfoCard = {
+  Icon: LucideIcon;
+  title: string;
+  description: string;
+};
+
+const infoCards: InfoCard[] = [
   {
     Icon: Code,
     title: 'Web Development',
