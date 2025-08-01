@@ -1,30 +1,23 @@
 import { Briefcase, Code, Smartphone } from 'lucide-react';
 import { Intro } from './Intro';
 import { Actions } from './Actions';
-import { InfoCard } from './InfoCard';
-import { LucideIcon } from 'lucide-react';
+import { InfoCard, InfoCardProps } from './InfoCard';
 
-type InfoCard = {
-  Icon: LucideIcon;
-  title: string;
-  description: string;
-};
-
-const infoCards: InfoCard[] = [
+const infoCards: InfoCardProps[] = [
   {
-    Icon: Code,
+    icon: Code,
     title: 'Web Development',
     description:
       'Creating responsive websites and web applications with modern frameworks.',
   },
   {
-    Icon: Smartphone,
+    icon: Smartphone,
     title: 'iOS Mobile Development',
     description:
       'Creating smooth, responsive apps tailored for Apple’s ecosystem and user expectations.',
   },
   {
-    Icon: Briefcase,
+    icon: Briefcase,
     title: 'Project Management',
     description:
       'Leading projects from conception to completion with agile methodologies.',
@@ -46,12 +39,7 @@ export const AboutSection = () => (
 
         <div className="grid grid-cols-1 gap-6">
           {infoCards.map((card, index) => (
-            <InfoCard
-              key={index}
-              Icon={card.Icon}
-              title={card.title}
-              description={card.description}
-            />
+            <InfoCard key={index} {...card} />
           ))}
         </div>
       </div>
