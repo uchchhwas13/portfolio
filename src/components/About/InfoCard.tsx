@@ -1,6 +1,16 @@
-import { Briefcase, Code, User } from 'lucide-react';
+import { LucideIcon } from 'lucide-react';
 
-export const InfoCard = ({ Icon, title, description }) => {
+type InfoCardProps = {
+  Icon: LucideIcon;
+  title: string;
+  description: string;
+};
+
+export const InfoCard: React.FC<InfoCardProps> = ({
+  Icon,
+  title,
+  description,
+}) => {
   return (
     <div className="gradient-border p-6 card-hover">
       <div className="flex items-start gap-4">
