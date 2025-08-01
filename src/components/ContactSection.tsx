@@ -8,21 +8,21 @@ import {
   Send,
   Twitter,
 } from 'lucide-react';
-import { useState } from "react";
-import { useToast } from '../hooks/use-toast';
+import { useState } from 'react';
+//import { useToast } from '../hooks/use-toast';
 
 export const ContactSection = () => {
-  const { toast } = useToast();
+  //const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setTimeout(() => {
-      toast({
-        title: 'Message sent!',
-        description: 'Thank you for your message. I will get back to you soon.',
-      });
+      // toast({
+      //   title: 'Message sent!',
+      //   description: 'Thank you for your message. I will get back to you soon.',
+      // });
       setIsSubmitting(false);
     }, 1500);
   };
@@ -163,7 +163,7 @@ export const ContactSection = () => {
                 disabled={isSubmitting}
                 className="cosmic-button w-full flex items-center justify-center gap-2"
               >
-                {isSubmitting ? "Sending" : "Send Message"}
+                {isSubmitting ? 'Sending' : 'Send Message'}
                 <Send size={16} />
               </button>
             </form>
