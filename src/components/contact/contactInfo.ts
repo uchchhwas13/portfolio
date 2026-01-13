@@ -10,7 +10,7 @@ export type ContactInfoItem = {
 export const contactInfo: ContactInfoItem[] = [
   {
     label: 'Email',
-    value: 'hello@gmail.com',
+    value: 'uchchhwas.roy@gmail.com',
     href: 'mailto:hello@gmail.com',
     Icon: Mail,
   },
